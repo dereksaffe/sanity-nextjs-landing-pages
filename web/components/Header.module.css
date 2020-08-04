@@ -3,7 +3,7 @@
 
 .root {
   position: relative;
-  color: var(--color-white, #fff);
+  color: var(--color-blue);
   display: flex;
   margin: 0 auto;
   max-width: var(--width-small);
