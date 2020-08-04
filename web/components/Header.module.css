@@ -75,7 +75,7 @@
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: var(--color-gray);
+    background-color: var(--color-very-light-gray);
     color: var(--color-black);
     @nest .root[data-show-nav="true"] & {
       display: block;
