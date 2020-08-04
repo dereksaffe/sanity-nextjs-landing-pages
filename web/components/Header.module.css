@@ -121,6 +121,11 @@
   }
 }
 
+.navItem:hover {
+  color: var(--color-blue);
+  transition:.2s ease-in-out;
+}
+
 .showNavButton {
   appearance: none;
   border: none;
