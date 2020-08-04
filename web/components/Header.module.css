@@ -33,12 +33,10 @@
   @nest & img, & svg {
     height: calc(var(--font-base-line-height) * 1.5rem);
     width: auto;
-    color: inherit;
     vertical-align: top;
   }
 
   @nest & svg path {
-    fill: currentColor;
   }
 
   @media (--media-max-medium) {
