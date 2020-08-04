@@ -38,5 +38,5 @@
 
 .item:hover {
   color: var(--color-blue);
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
 }
