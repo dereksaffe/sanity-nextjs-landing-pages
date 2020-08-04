@@ -35,3 +35,8 @@
     color: inherit;
   }
 }
+
+.item:hover {
+  color: var(--color-blue);
+  transition: .2s ease-in-out;
+}
