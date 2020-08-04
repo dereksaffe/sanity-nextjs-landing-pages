@@ -1,7 +1,7 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  color:#f2f2f2;
+  color:#808080;
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
   padding: 2rem 0;
