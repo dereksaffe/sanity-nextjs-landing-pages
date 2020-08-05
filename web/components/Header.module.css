@@ -12,6 +12,8 @@
 .root a {
   color: inherit;
   text-decoration: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .branding {
