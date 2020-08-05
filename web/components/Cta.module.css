@@ -8,10 +8,22 @@
   text-decoration: inherit;
   font-weight: 600;
   max-width: fit-content;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase !important;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: hidden !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent !important;
+    z-index:10;
 }
-
-
-
 
 .button {
   overflow: hidden !important;
