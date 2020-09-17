@@ -16,8 +16,5 @@
   "devDependencies": {
     "@sanity/cli": "^1.150.7",
     "lerna": "^3.22.1"
-  },
-  "dependencies": {
-    "react-svg-inline": "^2.1.1"
   }
 }
