@@ -6,20 +6,25 @@
   color: var(--color-black);
   display: flex;
   margin: 0 auto;
+
+   @media (--media-min-medium) {
   max-width: 65vw;
+   }
 }
 
 .root a {
   color: inherit;
   text-decoration: inherit;
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 1.2em;
   letter-spacing: .02em;
   text-transform: none;
 }
 
 .navContainer{
   display: flex;
+      align-items: center;
+
 
 
   width: 100vw;
@@ -29,6 +34,7 @@
   font-size: inherit;
   font-weight: inherit;
   text-transform: uppercase;
+
   margin: 0;
   padding: 0;
 
@@ -43,10 +49,10 @@
   }
 
   @nest & img, & svg {
-    height: calc(var(--font-base-line-height) * 2.5rem);
+    height: calc(var(--font-base-line-height) * 3rem);
     width: auto;
     margin-top: .4em;
-    margin-bottom: .2em;
+    margin-bottom: .55em;
   }
 
   @nest & svg path {
@@ -69,19 +75,20 @@
 }
 
 .navItems {
-  padding: 0;
-  gap: 2.2em;
+
 
 
   @media (--media-min-medium) {
     display: flex;
     justify-content: flex-end;
-    padding: 0 1rem;
+    align-items: center;
+
+
+      gap: 2.2em;
+
   }
 
-  @supports (padding-top: env(safe-area-inset-top)) {
-    padding-right: calc(env(safe-area-inset-right) + 1rem);
-  }
+
 
   @media (--media-max-medium) {
     z-index: 10;
@@ -90,8 +97,8 @@
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: var(--color-very-light-gray);
-    color: var(--color-black);
+    background-color: var(--color-blue);
+    color: var(--color-white);
     @nest .root[data-show-nav="true"] & {
       display: block;
     }
@@ -104,6 +111,7 @@
   align-items: stretch;
   line-height: calc(var(--font-base-line-height) * 1.5rem);
 
+
   @nest & > a {
     display: block;
     position: relative;
@@ -114,10 +122,11 @@
 
 
     @media (--media-max-medium) {
-      padding: .5rem 1rem;
       width: 100%;
+            padding: .5rem 1rem;
+
       box-sizing: border-box;
-      text-align: right;
+      text-align: center;
 
       @nest &[data-is-active="true"]::before {
         content: "";
@@ -141,8 +150,12 @@
 }
 
 .navItem:hover {
-  color: var(--color-blue);
-  transition:.2s ease-in-out;
+  @media (--media-min-medium) {
+    color: var(--color-blue);
+    transition:.2s ease-in-out;
+  }
+
+
 }
 
 .showNavButton {
