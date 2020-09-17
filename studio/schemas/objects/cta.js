@@ -31,6 +31,9 @@ export default {
       title: 'External link',
       name: 'link',
       type: 'url',
+      validation: Rule => Rule.uri({
+        scheme: ['http', 'https', 'mailto', 'tel']
+      })
       fieldset: 'link',
     },
   ],
