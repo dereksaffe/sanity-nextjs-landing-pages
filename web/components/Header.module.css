@@ -6,21 +6,21 @@
   color: var(--color-black);
   display: flex;
   margin: 0 auto;
-  max-width: 80vw;
+  max-width: 65vw;
 }
 
 .root a {
   color: inherit;
   text-decoration: inherit;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.25em;
   letter-spacing: .02em;
   text-transform: none;
 }
 
 .navContainer{
   display: flex;
-  justify-content: space-between;
+
 
   width: 100vw;
 }
@@ -34,7 +34,8 @@
 
   @nest & > a {
     display: block;
-    padding: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
 
    /* @supports (padding-top: env(safe-area-inset-top)) {
       padding-left: calc(env(safe-area-inset-left) + .5rem);
@@ -44,7 +45,7 @@
   @nest & img, & svg {
     height: calc(var(--font-base-line-height) * 2.5rem);
     width: auto;
-    vertical-align: top;
+    margin-top: .4em;
   }
 
   @nest & svg path {
@@ -60,6 +61,7 @@
 }
 
 .nav {
+
   @media (--media-min-medium) {
     flex: 1;
   }
@@ -67,6 +69,8 @@
 
 .navItems {
   padding: 0;
+  gap: 2.2em;
+
 
   @media (--media-min-medium) {
     display: flex;
@@ -102,10 +106,13 @@
   @nest & > a {
     display: block;
     position: relative;
-    padding: 1.5rem 0.5rem;
+    padding: 0;
+      text-transform: uppercase;
+
+
 
     @media (--media-max-medium) {
-      padding: 1rem 1.5rem;
+      padding: .5rem 1rem;
       width: 100%;
       box-sizing: border-box;
       text-align: right;
