@@ -6,14 +6,22 @@
   color: var(--color-black);
   display: flex;
   margin: 0 auto;
-  max-width: var(--width-small);
+  max-width: 80vw;
 }
 
 .root a {
   color: inherit;
   text-decoration: inherit;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 .branding {
@@ -27,13 +35,13 @@
     display: block;
     padding: 1.5em;
 
-    @supports (padding-top: env(safe-area-inset-top)) {
-      padding-left: calc(env(safe-area-inset-left) + 1.5rem);
-    }
+   /* @supports (padding-top: env(safe-area-inset-top)) {
+      padding-left: calc(env(safe-area-inset-left) + .5rem);
+    } */
   }
 
   @nest & img, & svg {
-    height: calc(var(--font-base-line-height) * 1.5rem);
+    height: calc(var(--font-base-line-height) * 2.5rem);
     width: auto;
     vertical-align: top;
   }
@@ -58,7 +66,6 @@
 
 .navItems {
   padding: 0;
-  margin: 0;
 
   @media (--media-min-medium) {
     display: flex;
