@@ -9,6 +9,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   background: var(--color-off-white);
+
   color: var(--color-black);
   margin: 0;
 }
