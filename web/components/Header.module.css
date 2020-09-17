@@ -46,6 +46,7 @@
     height: calc(var(--font-base-line-height) * 2.5rem);
     width: auto;
     margin-top: .4em;
+    margin-bottom: .2em;
   }
 
   @nest & svg path {
