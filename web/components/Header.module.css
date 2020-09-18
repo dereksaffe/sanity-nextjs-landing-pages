@@ -61,6 +61,12 @@
   @media (--media-max-medium) {
     flex: 1;
   }
+
+    @nest & img, & svg {
+        @media (--media-max-medium) {
+        margin-left: .6em;
+    }
+   }
 }
 
 .logo {
