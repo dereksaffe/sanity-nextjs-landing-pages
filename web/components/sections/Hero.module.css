@@ -11,6 +11,8 @@
   background-position: center center;
   padding-bottom: 2rem;
 
+
+
   @media (--media-min-medium) {
     padding-bottom: 4rem;
   }
