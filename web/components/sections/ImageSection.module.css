@@ -6,7 +6,7 @@
   padding: 2rem 0;
 
   @media (--media-min-medium) {
-    padding: 4rem 0;
+    padding: 0.5rem 0;
   }
 }
 
@@ -43,7 +43,7 @@ max-width: 90%;}
 
   @media (--media-min-medium) {
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 3rem;
 
     @nest & figcaption {
       position: absolute;
