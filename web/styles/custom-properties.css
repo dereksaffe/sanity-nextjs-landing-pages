@@ -14,6 +14,7 @@
   --color-blue: #034ea2;
   --color-accent: #156dff;
 
+
   /* Typography */
   --unit: 16;
   --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
