@@ -131,7 +131,7 @@ class LandingPage extends Component {
         <NextSeo
           config={{
             title,
-            titleTemplate: `${config.title} | %s`,
+            titleTemplate: `${config.title}`,
             description,
             canonical: config.url && `${config.url}/${slug}`,
             openGraph: {
