@@ -17,6 +17,7 @@
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .button::before,
